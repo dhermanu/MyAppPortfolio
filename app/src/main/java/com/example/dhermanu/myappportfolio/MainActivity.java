@@ -10,55 +10,56 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button1, button2, button3, button4, button5, button6;
+    Button spotifyButton, scoresButton,
+            libraryButton, buildButton, xyzButton, capstoneButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button1 = (Button) findViewById(R.id.button1);
-        button1.setOnClickListener(new View.OnClickListener() {
+        spotifyButton = (Button) findViewById(R.id.spotifyButton);
+        spotifyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 displayToast("Spotify Streamer project");
             }
         });
 
-        button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
+        scoresButton = (Button) findViewById(R.id.scoresButton);
+        scoresButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 displayToast("Super Duo Project");
             }
         });
 
-        button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
+        libraryButton = (Button) findViewById(R.id.libraryButton);
+        libraryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 displayToast("Super Duo Project");
             }
         });
 
-        button4 = (Button) findViewById(R.id.button4);
-        button4.setOnClickListener(new View.OnClickListener() {
+        buildButton = (Button) findViewById(R.id.buildButton);
+        buildButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 displayToast("Gradle Project");
             }
         });
 
-        button5 = (Button) findViewById(R.id.button5);
-        button5.setOnClickListener(new View.OnClickListener() {
+        xyzButton = (Button) findViewById(R.id.xyzButton);
+        xyzButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 displayToast("XYZ reader project");
             }
         });
 
-        button6 = (Button) findViewById(R.id.button6);
-        button6.setOnClickListener(new View.OnClickListener() {
+        capstoneButton = (Button) findViewById(R.id.capstoneButton);
+        capstoneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 displayToast("capstone project");
